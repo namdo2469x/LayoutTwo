@@ -1,0 +1,422 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+    font-size: 15px;
+}
+
+.responsive {
+    width: calc(100% - 100px);
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100px;
+    background-color: #fff;
+    z-index: 1;
+    width: 100%;
+}
+
+.header .header__icon {
+    display: inline-block;
+    margin-left: 60px;
+    line-height: 100px;
+}
+
+.header .header-nav {
+    margin-right: 60px;
+    float: right;
+}
+
+.header .nav li {
+    display: inline-block;
+    list-style: none;
+    height: 100px;
+}
+
+.header .nav li a {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 11px;
+    color: #000;
+    line-height: 100px;
+}
+
+.header .nav li a:hover {
+    color: aqua;
+}
+
+/* Mobile nav CSS */
+.mobile-nav-btn {
+    line-height: 100px;
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    display: none;
+    float: right;
+    margin-right: 60px;
+}
+
+.header-nav-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    height: 400px;
+    transform: translateX(-100%);
+}
+
+.nav-mobile {
+    margin-top: 40px;
+    list-style: none;
+}
+
+.nav-mobile a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    margin-left: 40px;
+}
+
+.header-nav-mobile-close {
+    width: 20px;
+    height: 20px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Banner */
+.banner {
+    height: 350px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #3e3e3e;
+    position: relative;
+}
+
+.banner .banner-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.banner .banner-section-heading {
+    font-size: 38px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.banner .banner-section-subheading {
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    letter-spacing: .5;
+    font-weight: 500;
+    width: 518px;
+}
+
+/* Info */
+.info {
+    height: 240px;
+    width: 100%;
+    background-color: #10c9c3;
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0 auto;
+}
+
+.info .info-list {
+    width: 25%;
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.info .info-item__img,
+.info .info-item__text {
+    display: inline-block;
+    padding: 8px;
+    line-height: 1.6;
+    color: #fff;
+}
+
+
+/* Content */
+.content {
+    width: 100%;
+    height: 570px;
+    background-color: #f5f5f5;
+}
+
+.content .content-image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.content .content-image__item {
+    width: 100%;
+    height: 100%;
+}
+
+.content .content-section {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.content-section-detail {
+    position: absolute;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+}
+
+.content .content-section__about {
+    font-size: 16px;
+    width: 455px;
+}
+
+.content .conten-section__heading {
+    font-size: 30px;
+    margin-bottom: 36px;
+}
+
+.content .content-section__para {
+    font-family: 'Nunito Sans';
+    font-weight: 600;
+    margin-bottom: 37px;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1.5;
+}
+
+
+/* Contact */
+.contact {
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+.contact .contact-section{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.contact .contact-section__heading{
+    font-size: 30px;
+}
+.contact .contact-section__para{
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 550;
+    margin-top: 30px;
+}
+.contact .contact-section__btn{
+    margin-top: 35px;
+    background-color: #10c9c3;
+    display: inline-block;
+    padding: 15px 50px;
+}
+.contact .contact-section__btn a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+/* Footer */
+.footer {
+    height: 284px;
+    width: 100%;
+    background-color: #141414;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer .footer-content {
+    margin-left: 25px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer .footer-content-company {
+    margin-right: 246px;
+    width: 230px;
+    max-width: 20%;
+}
+
+.footer .footer-content-company__heading {
+    color: #fff;
+}
+
+.footer .footer-content-company__subheading {
+    letter-spacing: 2;
+    font-family: 'Nunito Sans';
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 100;
+    margin-top: 23px;
+    font-size: 15px;
+}
+
+.footer .footer-content-company__subheading a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+    font-weight: 100
+}
+
+.footer .footer-content-contact__item--email {
+    font-family: 'Nunito Sans';
+}
+
+.footer .footer-content-contact {
+    margin-right: 137px;
+    margin-bottom: 48px;
+}
+
+.footer .footer-content-service {
+    margin-right: 137px;
+    font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer .footer-content-social {
+    font-family: 'Nunito Sans';
+}
+
+.footer .footer-content-info {
+    margin-right: 136px;
+    font-family: 'Nunito Sans';
+    font-weight: 500;
+}
+
+.footer .footer-content-contact a,
+.footer .footer-content-service__item,
+.footer .footer-content-social__item,
+.footer .footer-content-info__item {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.5;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+
+
+/*---------- Responsive ----------*/
+/* PC */
+@media (min-width: 1250px) {}
+
+/* Tablet */
+@media (min-width: 832px) and (max-width: 1250px) {
+
+    .info .info-item__img,
+    .info .info-item__text {
+        display: block;
+    }
+
+    .content .content-section__about {
+        width: 400px;
+    }
+
+    .footer .footer-content-company {
+        margin-right: 50px;
+    }
+
+    .footer .footer-content-contact {
+        margin-right: 50px;
+    }
+
+    .footer .footer-content-service {
+        margin-right: 50px;
+    }
+
+    .footer .footer-content-info {
+        margin-right: 50px;
+    }
+
+    #image .image-item {
+        width: calc(100%/3);
+        height: calc(100%/4);
+    }
+}
+
+/* Mobile */
+@media (max-width: 832px) {
+    
+
+    .banner .banner-section-subheading{
+        width: 450px;
+    }
+    
+    .info .info-list {
+        margin-left: 10px
+    }
+
+    .content .content-section__about {
+        width: 200px;
+    }
+
+    .mobile-nav-btn {
+        display: block;
+    }
+
+    .nav_input:checked~.header-nav-mobile {
+        transform: translateX(0%);
+    }
+
+    .header .header-nav-list {
+        display: none;
+    }
+
+    image .image-item {
+        width: calc(100%/2);
+        height: calc(100%/6);
+    }
+
+    footer .footer-content-company {
+        margin-right: 10px;
+    }
+
+    footer .footer-content-contact {
+        margin-right: 24px;
+    }
+
+    footer .footer-content-service {
+        margin-right: 10px;
+    }
+
+    footer .footer-content-info {
+        margin-right: 10px;
+    }
+
+}
